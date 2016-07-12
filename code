@@ -1,0 +1,58 @@
+#defining  new functions (add, substract, multiple and divide)
+def add (x,y):
+    return x+y
+def subtract (x,y):
+    return x-y
+def multiple (x,y):
+    return x*y
+def divide (x,y):
+    return x/y
+
+# prompt for number 1
+x= int (input ("Enter first number x: "))
+while x==0:
+    print ('Error!')
+    x= int (input ("Please Re-Enter number x: "))
+    
+  
+#prompt to enter operators
+print('Select operators')
+print ('1.Add')
+print('2.Subtract')
+print ('3.Multiple')
+print('4.Divide')
+
+operator= int (input ('Enter operators (1,2,3,4):'))
+while operator>=5:
+    print ('error')
+    operator= int (input ('Enter operators (1,2,3,4):'))
+    
+
+#prompt to enter second number
+y= int (input ("Enter second number y: "))
+while y==0:
+    print ("Error!")
+    y= int (input ("Please Re-Enter number y: "))
+    break
+
+#script for the program to display the operators properly and also recieve the commands
+if operator == 1:
+    z=int (add(x,y))
+    print (z)
+elif operator ==2:
+    z=int (subtract (x,y))
+    print (z)
+elif operator==3:
+    z=int (multiple (x,y))
+    print (z)
+elif operator == 4:
+    z= int (divide (x,y))
+    print (z)
+else:
+    print ('Invalid input')
+
+    
+
+
+
+
